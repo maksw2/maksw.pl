@@ -1,1 +1,1 @@
-# bestmcgames.pl
+please fuck off
