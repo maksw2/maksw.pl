@@ -1,2 +1,2 @@
-if (location.protocol == 'https:')
-  location.href = location.href.replace(/^https:/, 'http:')
+if (location.protocol == 'http:')
+  location.href = location.href.replace(/^http:/, 'https:')
