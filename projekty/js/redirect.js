@@ -1,3 +1,3 @@
-if (location.protocol !== 'https:') {
-    location.replace(`http:${location.href.substring(location.protocol.length)}`);
+if (location.protocol !== 'http:') {
+    location.replace(`https:${location.href.substring(location.protocol.length)}`);
 }
