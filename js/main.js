@@ -35,7 +35,7 @@
 
     /*------------------------------------
         02. Owl Carousel
-    ------------------------------------- */
+    ------------------------------------- *
     $(".dental-owl-slider").owlCarousel({
         autoPlay: 8000,
         items: 1,
@@ -49,7 +49,7 @@
         transitionStyle: "fade",
         addClassActive: true,
         navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-    });
+    }); fuck*/
 
     /*------------------------------------
         Team Carousel
@@ -197,7 +197,7 @@
     
     /*---------------------
     chosen
-    --------------------- */
+    --------------------- *
     jQuery('.orderby').chosen({disable_search: true, width: "auto"});
     
     
@@ -207,4 +207,4 @@
     
     
 
-})(jQuery);
+})(jQuery); fuckyu*/
