@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script>
+			if (location.protocol == 'https:') // detect https
+                            location.href = location.href.replace(/^https:/, 'http:') // change the protocol from https:/ to http:
+                            // a _normal_ version of this script (http to https) can be found in /js/redirect.js
+                            // credit: some guy on stackoverflow
+                            // modified by me
+		</script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Play minecraft 1.8 in your browser" />
