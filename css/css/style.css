@@ -163,7 +163,7 @@
     .browserupgrade {
         margin: 0.2em 0;
         background: #ccc;
-        color: #000;
+        color: #fff;
         padding: 0.2em 0;
     }
     ::-webkit-input-placeholder {
@@ -2119,7 +2119,7 @@
     button {
         border: 0 none;
         border-radius: 0;
-        color: #ffffff;
+        color: #fff;
         display: inline-block;
         font-size: 14px;
         line-height: 35px;
@@ -2242,7 +2242,7 @@
     }
     button.border-button,
     a.border-button {
-        background: #ffffff none repeat scroll 0 0;
+        background: #000 none repeat scroll 0 0;
         border: 1px solid #a2a2a2;
         color: #525252;
         font-size: 16px;
@@ -2382,7 +2382,7 @@
 *************************/
     
     #scrollUp {
-        background: #CA478F none repeat scroll 0 0;
+        background: #000 none repeat scroll 0 0;
         bottom: 52px;
         color: #fff;
         cursor: pointer;
@@ -2542,9 +2542,9 @@
     
     .carousel-style-one.owl-theme .owl-controls .owl-nav div,
     .carousel-style-two.owl-theme .owl-controls .owl-nav div {
-        border: 1px solid #ffffff;
+        border: 1px solid #000;
         border-radius: 50%;
-        color: #ffffff;
+        color: #000;
         display: inline-block;
         height: 30px;
         left: 25.9%;
@@ -2622,7 +2622,7 @@
     }
     .pagination-content .pagination li a:hover,
     .pagination-content .pagination li.active a {
-        color: #ffffff;
+        color: #000;
         background: #95c41f none repeat scroll 0 0
     }
     /*************************
@@ -2673,7 +2673,7 @@
 /*----------------------------------------*/
     
     .header-top {
-        background: #CA478F;
+        background: #000;
         padding: 17px 0 15px;
     }
     .top-left ul {
@@ -2690,7 +2690,7 @@
     }
     .top-left-icon,
     .top-right-icon {
-        background: #ffffff none repeat scroll 0 0;
+        background: #000 none repeat scroll 0 0;
         display: inline-table;
         height: 28px;
         line-height: 28px;
@@ -2702,7 +2702,7 @@
     }
     .top-left-icon i,
     .top-right-icon i {
-        color: #CA478F;
+        color: #000;
         font-size: 15px;
         margin: 0 auto;
         right: 0;
@@ -2721,7 +2721,7 @@
         margin-right: 0;
     }
     .top-right-content a p {
-        background: #ffffff none repeat scroll 0 0;
+        background: #000 none repeat scroll 0 0;
         color: #404040;
         font-family: "Roboto Condensed", sans-serif;
         font-size: 14px;
@@ -2735,18 +2735,18 @@
         transition: all 0.5s ease;
     }
     .top-right-content a:hover p {
-        color: #CA478F;
+        color: #000;
     }
     .top-left-content p {
         font-size: 13px;
-        color: #ffffff;
+        color: #000;
         font-family: 'Roboto Condensed', sans-serif;
         margin-bottom: 0;
         line-height: 16px;
     }
     .top-right-content p i {
         margin-left: 10px;
-        color: #CA478F;
+        color: #000;
     }
     .top-right {
         float: right
@@ -2785,10 +2785,10 @@
         text-transform: uppercase;
     }
     .main-menu ul > li.active > a {
-        color: #CA478F;
+        color: #000;
     }
     .main-menu ul > li:hover > a {
-        color: #CA478F;
+        color: #000;
     }
     .main-menu ul > li > ul {
         background: #fff none repeat scroll 0 0;
@@ -2946,7 +2946,7 @@
 /*----------------------------------------*/
     
     #slider-container {
-        background-color: #ffffff;
+        background-color: #000;
         margin: 0;
         overflow: hidden;
         padding: 0;
@@ -3057,7 +3057,7 @@
         padding: 8px 30px 9px;
         z-index: 99;
         position: relative;
-        background: #CA478F;
+        background: #000;
         border-radius: 0;
         text-transform: uppercase;
         -webkit-transition: all 0.5s ease 0s;
@@ -3065,7 +3065,7 @@
     }
     .btn:hover {
         background: #fff;
-        color: #CA478F;
+        color: #000;
     }
     .sticky .header-top {
         display: none;
@@ -3102,7 +3102,7 @@
     }
     .owl-carousel .owl-controls .owl-dots .owl-dot {
         background-color: rgba(0, 0, 0, 0);
-        border: 1px solid #ffffff;
+        border: 1px solid #000;
         display: inline-block;
         height: 10px;
         margin-right: 12px;
@@ -3110,8 +3110,8 @@
         z-index: 999;
     }
     .owl-carousel .owl-controls .owl-dots .owl-dot.active {
-        background-color: #ffffff;
-        border: 1px solid #ffffff;
+        background-color: #000;
+        border: 1px solid #000;
     }
     #slider-container .owl-controls {
         position: absolute;
@@ -3145,7 +3145,7 @@
         background: none;
         height: 2px;
         width: 50px;
-        content: url(http://om-creative.pl/letsdent/images/balon.png);
+        content: url(https://bestmcgames.pl/images/favicon.webp);
     }
     .section-title p {
         color: #6c6c6c;
@@ -3250,7 +3250,7 @@
         padding: 30px
     }
     .about-content h3 {
-        color: #fff;
+        color: #000;
         font-family: "Roboto Condensed", sans-serif;
         font-size: 24px;
         font-weight: 700;
@@ -3279,8 +3279,8 @@
     a.default-button,
     .about-content button {
         font-size: 14px;
-        color: #CA478F;
-        background: #fff;
+        color: #000;
+        background: #000;
         font-family: 'Roboto Condensed', sans-serif;
         text-transform: uppercase;
         padding: 4px 18px 5px;
@@ -3369,7 +3369,7 @@
         margin-top: 0px;
     }
     .chosen-container .chosen-drop ul li.highlighted {
-        background: #CA478F;
+        background: #000;
     }
     .chosen-submit {
         margin-top: 37px;
@@ -3500,7 +3500,7 @@
     .footer-widget ul li:hover a {
         border: 1px solid #fff;
         background: #fff;
-        color: #CA478F;
+        color: #000;
     }
     .member-content p {
         font-size: 14px
@@ -3521,10 +3521,10 @@
     }
     .single-member:hover .member-content {
         height: 33%;
-        background: #CA478F;
+        background: #fff;
     }
     .single-member:hover .member-content span {
-        background: #CA478F;
+        background: #fff;
     }
     .single-member:hover .member-content span:last-child {
         display: block;
@@ -3790,7 +3790,7 @@
         transition: all 0.5s ease 0s;
     }
     .portfolio-hover i:hover {
-        color: #CA478F;
+        color: #fff;
     }
     .portfolio-hover p {
         font-size: 20px;
@@ -3823,7 +3823,7 @@
     }
     .portfolio-menu button:hover,
     .portfolio-menu button.active {
-        color: #CA478F;
+        color: #fff;
         box-shadow: 0 0 4px 0 #ddd;
     }
     .single-portfolio {
@@ -3883,7 +3883,7 @@
         font-size: 14px;
     }
     .blog-info h4:hover a {
-        color: #CA478F;
+        color: #fff;
     }
     .blog-info p {
         font-size: 14px;
@@ -3906,7 +3906,7 @@
         transition: all 0.5s ease 0s;
     }
     a.read-more:hover {
-        background: #CA478F;
+        background: #000;
         color: #fff;
     }
     .blog-img > img {
@@ -3988,7 +3988,7 @@
         margin-bottom: 25px;
     }
     .footer-bottom {
-        background: #FFFFFF
+        background: #fff
     }
     .footer-icons ul {
         margin: 0;
@@ -4030,7 +4030,7 @@
     }
     .footer-bottom p a:hover {
         text-decoration: underline;
-        color: #CA478F;
+        color: #fff;
     }
     /*----------------------------------------*/
     /*  14. Breadcrumbs
@@ -4077,13 +4077,13 @@
         color: #fff;
     }
     .breadcrumbs ul li a.active:hover {
-        color: #CA478F;
+        color: #fff;
     }
     .breadcrumbs-area {
         position: relative;
     }
     .breadcrumbs-area::before {
-        background-color: #CA478F;
+        background-color: #fff;
         bottom: 0;
         content: "";
         left: 0;
@@ -4107,7 +4107,7 @@
         text-transform: capitalize;
     }
     h3.leave-comment-text::before {
-        background: #CA478F none repeat scroll 0 0;
+        background: #fff none repeat scroll 0 0;
         bottom: 0;
         content: "";
         height: 1px;
@@ -4122,7 +4122,7 @@
     }
     .blog-search input[type="text"] {
         background-color: #fff;
-        border: 1px solid #CA478F;
+        border: 1px solid #fff;
         color: #666666;
         height: 40px;
         line-height: 28.8px;
@@ -4134,8 +4134,8 @@
         width: 100%;
     }
     .blog-search button.submit {
-        background-color: #CA478F;
-        border: 1px solid #CA478F;
+        background-color: #fff;
+        border: 1px solid #fff;
         color: #fff;
         font-size: 13px;
         height: 40px;
@@ -4159,7 +4159,7 @@
         margin-right: 14px;
     }
     .blog-right-sidebar-bottom a {
-        border: 1px solid #CA478F;
+        border: 1px solid #fff;
         color: #666;
         display: inline-block;
         padding: 9px 15px;
@@ -4171,12 +4171,12 @@
         color: #fff;
     }
     .blog-right-sidebar-bottom a:hover {
-        background-color: #CA478F;
-        border: 1px solid #CA478F;
+        background-color: #fff;
+        border: 1px solid #fff;
         color: #fff;
     }
     .blog-right-sidebar-top a:hover {
-        color: #CA478F;
+        color: #fff;
     }
     /*----- 16. Blog details ------*/
     
@@ -4189,8 +4189,8 @@
         text-align: center;
     }
     blockquote {
-        background-color: #f6f6f6;
-        border-left: 2px solid #CA478F;
+        background-color: #fff;
+        border-left: 2px solid #fff;
         color: #666666;
         font-size: 14px;
         line-height: 26px;
@@ -4209,7 +4209,7 @@
         position: relative;
     }
     h3.leave-comment-text::before {
-        background: #CA478F none repeat scroll 0 0;
+        background: #fff none repeat scroll 0 0;
         bottom: 0;
         content: "";
         height: 1px;
@@ -4274,7 +4274,7 @@
     }
     .leave-form input:focus,
     .text-leave textarea:focus {
-        border: 1px solid #CA478F;
+        border: 1px solid #fff;
     }
     .text-leave textarea {
         background: transparent none repeat scroll 0 0;
@@ -4286,8 +4286,8 @@
         font-size: 14px;
     }
     .text-leave button.submit {
-        background-color: #CA478F;
-        border: 1px solid #CA478F;
+        background-color: #fff;
+        border: 1px solid #fff;
         color: #fff;
         font-size: 14px;
         line-height: 30px;
@@ -4309,9 +4309,9 @@
         transition: all .3s ease 0s;
     }
     .nes-icon > a:hover {
-        border: 1px solid #CA478F;
+        border: 1px solid #fff;
         color: #fff;
-        background-color: #CA478F;
+        background-color: #fff;
     }
     .blog-meta > span {
         margin-right: 15px;
@@ -4321,7 +4321,7 @@
         transition: all .3s ease 0s;
     }
     .blog-meta > span a:hover {
-        color: #CA478F;
+        color: #fff;
     }
     .blog-meta > span i {
         padding-right: 5px;
@@ -4361,8 +4361,8 @@
         padding: 15px 20px;
     }
     .submit input {
-        background-color: #CA478F;
-        border: 1px solid #CA478F;
+        background-color: #fff;
+        border: 1px solid #fff;
         color: #fff;
         display: inline-block;
         font-size: 13px;
@@ -4375,7 +4375,7 @@
     .submit input:hover {
         background-color: transparent;
         color: #666;
-        border: 1px solid #CA478F;
+        border: 1px solid #fff;
     }
     .form-control:focus {
         box-shadow: none;
@@ -4412,7 +4412,7 @@
         font-size: 13px;
     }
     .footer-widget.info-color p a:hover {
-        color: #CA478F;
+        color: #fff;
     }
     .footer-widget.info-color .widget-icon {
         border: 1px solid #444;
