@@ -207,4 +207,4 @@
     
     
 
-})(jQuery); fuckyu*/
+})(jQuery); fuckyu */
