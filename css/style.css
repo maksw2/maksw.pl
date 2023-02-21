@@ -3145,7 +3145,7 @@
         background: none;
         height: 2px;
         width: 50px;
-        content: url(http://om-creative.pl/letsdent/images/balon.png);
+        content: url(/images/favicon.webp);
     }
     .section-title p {
         color: #6c6c6c;
