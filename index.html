@@ -14,14 +14,6 @@
      <link rel="stylesheet" href="css/style.css">
      <link rel="stylesheet" href="css/responsive.css">
 	 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-	 <script>
-var imageArray = ["./images/image1.webp", "./images/image2.webp", "./images/image3.webp", "./images/image4.webp", "./images/image5.webp", "./images/image6.webp"];
-var randomImageIndex = Math.floor(Math.random() * imageArray.length);
-var randomSlide = document.getElementById("random-slide");
-randomSlide.style.backgroundImage = "none";
-var randomImage = document.getElementById("random-image");
-randomImage.src = imageArray[randomImageIndex];
-    </script>
    </head>
    <body>
       <div class="wrapper bg-white fix">
@@ -53,7 +45,8 @@ randomImage.src = imageArray[randomImageIndex];
             <section id="slider-container">
                <div class="dental-owl-slider">
                   <div class="single-slide height-100vh" id="random-slide">
-                   <img id="random-image" alt="Random Image">
+                    <img id="random-image" alt="Random Image">
+					<script src="./js/random.js"></script>
                      <div class="slider-content-area">
                         <div class="dis-table">
                            <div class="dis-table-cell text-left">
