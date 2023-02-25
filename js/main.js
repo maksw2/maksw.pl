@@ -197,7 +197,7 @@
     
     /*---------------------
     chosen
-    --------------------- *
+    --------------------- */
     jQuery('.orderby').chosen({disable_search: true, width: "auto"});
     
     
@@ -207,4 +207,4 @@
     
     
 
-})(jQuery); fuckyu */
+})(jQuery);
