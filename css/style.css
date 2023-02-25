@@ -2382,7 +2382,7 @@
 *************************/
     
     #scrollUp {
-        background: #CA478F none repeat scroll 0 0;
+        background: #00b1e6 none repeat scroll 0 0;
         bottom: 52px;
         color: #fff;
         cursor: pointer;
@@ -2673,7 +2673,7 @@
 /*----------------------------------------*/
     
     .header-top {
-        background: #CA478F;
+        background: #00b1e6;
         padding: 17px 0 15px;
     }
     .top-left ul {
@@ -2702,7 +2702,7 @@
     }
     .top-left-icon i,
     .top-right-icon i {
-        color: #CA478F;
+        color: #00b1e6;
         font-size: 15px;
         margin: 0 auto;
         right: 0;
@@ -2735,7 +2735,7 @@
         transition: all 0.5s ease;
     }
     .top-right-content a:hover p {
-        color: #CA478F;
+        color: #00b1e6;
     }
     .top-left-content p {
         font-size: 13px;
@@ -2746,7 +2746,7 @@
     }
     .top-right-content p i {
         margin-left: 10px;
-        color: #CA478F;
+        color: #00b1e6;
     }
     .top-right {
         float: right
@@ -2785,10 +2785,10 @@
         text-transform: uppercase;
     }
     .main-menu ul > li.active > a {
-        color: #CA478F;
+        color: #00b1e6;
     }
     .main-menu ul > li:hover > a {
-        color: #CA478F;
+        color: #00b1e6;
     }
     .main-menu ul > li > ul {
         background: #fff none repeat scroll 0 0;
@@ -3057,7 +3057,7 @@
         padding: 8px 30px 9px;
         z-index: 99;
         position: relative;
-        background: #CA478F;
+        background: #00b1e6;
         border-radius: 0;
         text-transform: uppercase;
         -webkit-transition: all 0.5s ease 0s;
@@ -3065,7 +3065,7 @@
     }
     .btn:hover {
         background: #fff;
-        color: #CA478F;
+        color: #00b1e6;
     }
     .sticky .header-top {
         display: none;
@@ -3145,7 +3145,7 @@
         background: none;
         height: 2px;
         width: 50px;
-        content: url(http://om-creative.pl/letsdent/images/balon.png);
+        content: url(./images/favicon.webp);
     }
     .section-title p {
         color: #6c6c6c;
@@ -3279,7 +3279,7 @@
     a.default-button,
     .about-content button {
         font-size: 14px;
-        color: #CA478F;
+        color: #00b1e6;
         background: #fff;
         font-family: 'Roboto Condensed', sans-serif;
         text-transform: uppercase;
@@ -3369,7 +3369,7 @@
         margin-top: 0px;
     }
     .chosen-container .chosen-drop ul li.highlighted {
-        background: #CA478F;
+        background: #00b1e6;
     }
     .chosen-submit {
         margin-top: 37px;
@@ -3500,7 +3500,7 @@
     .footer-widget ul li:hover a {
         border: 1px solid #fff;
         background: #fff;
-        color: #CA478F;
+        color: #00b1e6;
     }
     .member-content p {
         font-size: 14px
@@ -3521,10 +3521,10 @@
     }
     .single-member:hover .member-content {
         height: 33%;
-        background: #CA478F;
+        background: #00b1e6;
     }
     .single-member:hover .member-content span {
-        background: #CA478F;
+        background: #00b1e6;
     }
     .single-member:hover .member-content span:last-child {
         display: block;
@@ -3790,7 +3790,7 @@
         transition: all 0.5s ease 0s;
     }
     .portfolio-hover i:hover {
-        color: #CA478F;
+        color: #00b1e6;
     }
     .portfolio-hover p {
         font-size: 20px;
@@ -3823,7 +3823,7 @@
     }
     .portfolio-menu button:hover,
     .portfolio-menu button.active {
-        color: #CA478F;
+        color: #00b1e6;
         box-shadow: 0 0 4px 0 #ddd;
     }
     .single-portfolio {
@@ -3883,7 +3883,7 @@
         font-size: 14px;
     }
     .blog-info h4:hover a {
-        color: #CA478F;
+        color: #00b1e6;
     }
     .blog-info p {
         font-size: 14px;
@@ -3906,7 +3906,7 @@
         transition: all 0.5s ease 0s;
     }
     a.read-more:hover {
-        background: #CA478F;
+        background: #00b1e6;
         color: #fff;
     }
     .blog-img > img {
@@ -3917,7 +3917,7 @@
 /*----------------------------------------*/
     
     .footer-area {
-        background: #CA478F;
+        background: #00b1e6;
     }
     .footer-logo {
         margin-bottom: 30px;
@@ -4030,7 +4030,7 @@
     }
     .footer-bottom p a:hover {
         text-decoration: underline;
-        color: #CA478F;
+        color: #00b1e6;
     }
     /*----------------------------------------*/
     /*  14. Breadcrumbs
@@ -4077,13 +4077,13 @@
         color: #fff;
     }
     .breadcrumbs ul li a.active:hover {
-        color: #CA478F;
+        color: #00b1e6;
     }
     .breadcrumbs-area {
         position: relative;
     }
     .breadcrumbs-area::before {
-        background-color: #CA478F;
+        background-color: #00b1e6;
         bottom: 0;
         content: "";
         left: 0;
@@ -4107,7 +4107,7 @@
         text-transform: capitalize;
     }
     h3.leave-comment-text::before {
-        background: #CA478F none repeat scroll 0 0;
+        background: #00b1e6 none repeat scroll 0 0;
         bottom: 0;
         content: "";
         height: 1px;
@@ -4122,7 +4122,7 @@
     }
     .blog-search input[type="text"] {
         background-color: #fff;
-        border: 1px solid #CA478F;
+        border: 1px solid #00b1e6;
         color: #666666;
         height: 40px;
         line-height: 28.8px;
@@ -4134,8 +4134,8 @@
         width: 100%;
     }
     .blog-search button.submit {
-        background-color: #CA478F;
-        border: 1px solid #CA478F;
+        background-color: #00b1e6;
+        border: 1px solid #00b1e6;
         color: #fff;
         font-size: 13px;
         height: 40px;
@@ -4159,7 +4159,7 @@
         margin-right: 14px;
     }
     .blog-right-sidebar-bottom a {
-        border: 1px solid #CA478F;
+        border: 1px solid #00b1e6;
         color: #666;
         display: inline-block;
         padding: 9px 15px;
@@ -4171,12 +4171,12 @@
         color: #fff;
     }
     .blog-right-sidebar-bottom a:hover {
-        background-color: #CA478F;
-        border: 1px solid #CA478F;
+        background-color: #00b1e6;
+        border: 1px solid #00b1e6;
         color: #fff;
     }
     .blog-right-sidebar-top a:hover {
-        color: #CA478F;
+        color: #00b1e6;
     }
     /*----- 16. Blog details ------*/
     
@@ -4190,7 +4190,7 @@
     }
     blockquote {
         background-color: #f6f6f6;
-        border-left: 2px solid #CA478F;
+        border-left: 2px solid #00b1e6;
         color: #666666;
         font-size: 14px;
         line-height: 26px;
@@ -4209,7 +4209,7 @@
         position: relative;
     }
     h3.leave-comment-text::before {
-        background: #CA478F none repeat scroll 0 0;
+        background: #00b1e6 none repeat scroll 0 0;
         bottom: 0;
         content: "";
         height: 1px;
@@ -4274,7 +4274,7 @@
     }
     .leave-form input:focus,
     .text-leave textarea:focus {
-        border: 1px solid #CA478F;
+        border: 1px solid #00b1e6;
     }
     .text-leave textarea {
         background: transparent none repeat scroll 0 0;
@@ -4286,8 +4286,8 @@
         font-size: 14px;
     }
     .text-leave button.submit {
-        background-color: #CA478F;
-        border: 1px solid #CA478F;
+        background-color: #00b1e6;
+        border: 1px solid #00b1e6;
         color: #fff;
         font-size: 14px;
         line-height: 30px;
@@ -4309,9 +4309,9 @@
         transition: all .3s ease 0s;
     }
     .nes-icon > a:hover {
-        border: 1px solid #CA478F;
+        border: 1px solid #00b1e6;
         color: #fff;
-        background-color: #CA478F;
+        background-color: #00b1e6;
     }
     .blog-meta > span {
         margin-right: 15px;
@@ -4321,7 +4321,7 @@
         transition: all .3s ease 0s;
     }
     .blog-meta > span a:hover {
-        color: #CA478F;
+        color: #00b1e6;
     }
     .blog-meta > span i {
         padding-right: 5px;
@@ -4361,8 +4361,8 @@
         padding: 15px 20px;
     }
     .submit input {
-        background-color: #CA478F;
-        border: 1px solid #CA478F;
+        background-color: #00b1e6;
+        border: 1px solid #00b1e6;
         color: #fff;
         display: inline-block;
         font-size: 13px;
@@ -4375,7 +4375,7 @@
     .submit input:hover {
         background-color: transparent;
         color: #666;
-        border: 1px solid #CA478F;
+        border: 1px solid #00b1e6;
     }
     .form-control:focus {
         box-shadow: none;
@@ -4412,7 +4412,7 @@
         font-size: 13px;
     }
     .footer-widget.info-color p a:hover {
-        color: #CA478F;
+        color: #00b1e6;
     }
     .footer-widget.info-color .widget-icon {
         border: 1px solid #444;
