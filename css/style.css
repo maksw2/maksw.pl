@@ -3138,15 +3138,6 @@
         font-weight: 700;
         position: relative;
     }
-    .section-title h2:before {
-        position: absolute;
-        left: -60px;
-        top: 10%;
-        background: none;
-        height: 2px;
-        width: 50px;
-        content: url(./images/favicon.webp);
-    }
     .section-title p {
         color: #6c6c6c;
         font-size: 14px;
