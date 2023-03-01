@@ -118,7 +118,14 @@
                             </div>
                         </div>
                         <div class="col-md-6 align-self-end">
-                           <img src="images/projekty.webp" alt="emergency">
+                           <script alt="emergency">
+                            document.addEventListener("DOMContentLoaded", function() {
+                            var imageArray = ["./images/internet1.webp", "./images/internet2.webp", "./images/internet3.webp"];
+                            var randomImageIndex = Math.floor(Math.random() * imageArray.length);
+                            var imageSrc = imageArray[randomImageIndex];
+                            document.body.style.backgroundImage = "url('" + imageSrc + "')";
+                            });
+                          <script>
                         </div>
                      </div>
                   </div>
