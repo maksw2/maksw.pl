@@ -1,1 +1,20 @@
-@import url(http://bestmcgames.pl/css/font-awesome.min.css);@import url(http://bestmcgames.pl/css/material-design-iconic-font.css);@import url(http://bestmcgames.pl/css/material-design-iconic-font.min.css);@import url(http://bestmcgames.pl/css/plugins/animate.css);@import url(http://bestmcgames.pl/css/plugins/jquery-ui.min.css);@import url(http://bestmcgames.pl/css/http://bestmcgames.pl/css/plugins/owl.carousel.css);@import url(http://bestmcgames.pl/css/plugins/slick.css);@import url(http://bestmcgames.pl/css/plugins/hover.css);
+/*------------------------------------------------------------------------------
+
+Template:  Anik
+Author: 
+Version: 1
+Design and Developed by: 
+
+Note: This core style file includes all external plugins css file.
+
+-------------------------------------------------------------------------------*/
+
+@import url("font-awesome.min.css");
+@import url("material-design-iconic-font.css");
+@import url("material-design-iconic-font.min.css");
+@import url("plugins/animate.css");
+@import url("plugins/jquery-ui.min.css");
+@import url("plugins/owl.carousel.css");
+@import url("plugins/slick.css");
+@import url("plugins/owl.carousel.css");
+@import url("plugins/hover.css");
