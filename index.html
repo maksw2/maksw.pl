@@ -78,7 +78,16 @@ padding:"inner"+a,content:b,"":"outer"+a},function(c,d){n.fn[d]=function(d,e){va
                <div class="dental-owl-slider">
                   <div class="slider">
                    <div class="single-slide" style="background-image: none;"></div>
-				    <script src="./js/random.js"></script>
+				    <script>
+		console.log('randomizing images')
+		document.addEventListener("DOMContentLoaded", function() {
+        var imageArray = ["./images/image1.webp", "./images/image2.webp", "./images/image3.webp", "./images/image4.webp", "./images/image5.webp", "./images/image6.webp"];
+        var randomImageIndex = Math.floor(Math.random() * imageArray.length);
+        var imageSrc = imageArray[randomImageIndex];
+        var slideElement = document.querySelector(".single-slide");
+        slideElement.style.backgroundImage = "url('" + imageSrc + "')";
+        });
+		console.log('done!')</script>
                      <div class="slider-content-area">
                         <div class="dis-table">
                            <div class="dis-table-cell text-left">
@@ -133,13 +142,27 @@ padding:"inner"+a,content:b,"":"outer"+a},function(c,d){n.fn[d]=function(d,e){va
                             </div>
                         </div>
                         <div class="col-md-6 align-self-end">
-                          <script alt="emergency">
-                           document.addEventListener("DOMContentLoaded", function() {
-                           var imageArray = ["./images/internet1.webp", "./images/internet2.webp", "./images/internet3.webp"];
-                           var randomImageIndex = Math.floor(Math.random() * imageArray.length);
-                           var imageSrc = imageArray[randomImageIndex];
-                           document.body.style.backgroundImage = "url('" + imageSrc + "')";
-                           });
+						 <img id="random-image">
+                          <script>
+						  console.log('randomizing images')
+// Define the list of image names
+const imageNames = ["internet1.webp", "internet2.webp", "internet3.webp"];
+
+// Choose a random image name from the list
+const randomImageName = imageNames[Math.floor(Math.random() * imageNames.length)];
+
+// Define the path to the image directory
+const imageDir = "./images/";
+
+// Construct the full path to the randomly selected image
+const imagePath = imageDir + randomImageName;
+
+// Get the image tag from the HTML document
+const image = document.getElementById("random-image");
+
+// Set the src attribute of the image tag to the randomly selected image
+image.setAttribute("src", imagePath);
+console.log('done!')
                           </script>
                         </div>
                      </div>
