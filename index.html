@@ -47,15 +47,6 @@ padding:"inner"+a,content:b,"":"outer"+a},function(c,d){n.fn[d]=function(d,e){va
              background-size: cover;
              }
 	 </style>
-     <!-- github integration -->
-     <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
-     console.log('loading github integration')
-	 new Crate({
-       server: '793179567727968307', // ben
-       channel: '1085578636939247697' // #pomoc
-     })
-     console.log('done!')
-     </script>
    </head>
    <body>
       <div class="wrapper bg-white fix">
@@ -89,15 +80,16 @@ padding:"inner"+a,content:b,"":"outer"+a},function(c,d){n.fn[d]=function(d,e){va
                   <div class="slider">
                    <div class="single-slide" style="background-image: none;"></div>
 				    <script>
-		console.log('randomizing images')
-		document.addEventListener("DOMContentLoaded", function() {
-        var imageArray = ["./images/image1.webp", "./images/image2.webp", "./images/image3.webp", "./images/image4.webp", "./images/image5.webp", "./images/image6.webp"];
-        var randomImageIndex = Math.floor(Math.random() * imageArray.length);
-        var imageSrc = imageArray[randomImageIndex];
-        var slideElement = document.querySelector(".single-slide");
-        slideElement.style.backgroundImage = "url('" + imageSrc + "')";
-        });
-		console.log('done!')</script>
+	                 console.log('randomizing images')
+                     document.addEventListener("DOMContentLoaded", function() {
+                     var imageArray = ["./images/image1.webp", "./images/image2.webp", "./images/image3.webp", "./images/image4.webp", "./images/image5.webp", "./images/image6.webp", "./images/image7.webp"];
+                     var randomImageIndex = Math.floor(Math.random() * imageArray.length);
+                     var imageSrc = imageArray[randomImageIndex];
+                     var slideElement = document.querySelector(".single-slide");
+                     slideElement.style.backgroundImage = "url('" + imageSrc + "')";
+                     });
+		             console.log('done!')
+					</script>
                      <div class="slider-content-area">
                         <div class="dis-table">
                            <div class="dis-table-cell text-left">
@@ -154,25 +146,14 @@ padding:"inner"+a,content:b,"":"outer"+a},function(c,d){n.fn[d]=function(d,e){va
                         <div class="col-md-6 align-self-end">
 						 <img id="random-image">
                           <script>
-						  console.log('randomizing images')
-// Define the list of image names
-const imageNames = ["internet1.webp", "internet2.webp", "internet3.webp"];
-
-// Choose a random image name from the list
-const randomImageName = imageNames[Math.floor(Math.random() * imageNames.length)];
-
-// Define the path to the image directory
-const imageDir = "./images/";
-
-// Construct the full path to the randomly selected image
-const imagePath = imageDir + randomImageName;
-
-// Get the image tag from the HTML document
-const image = document.getElementById("random-image");
-
-// Set the src attribute of the image tag to the randomly selected image
-image.setAttribute("src", imagePath);
-console.log('done!')
+						   console.log('randomizing images')
+                           const imageNames = ["internet1.webp", "internet2.webp", "internet3.webp"];
+                           const randomImageName = imageNames[Math.floor(Math.random() * imageNames.length)];
+                           const imageDir = "./images/";
+                           const imagePath = imageDir + randomImageName;
+                           const image = document.getElementById("random-image");
+                           image.setAttribute("src", imagePath);
+                           console.log('done!')
                           </script>
                         </div>
                      </div>
@@ -235,8 +216,8 @@ console.log('done!')
             </section>
          </div>
       </div>	 		
-     <!-- <script src="js/plugins.js"></script>	
-      <script src="js/main.js"></script> !-->
+     <script src="js/plugins.js"></script>	
+     <script src="js/main.js"></script>
    </body>
    <script>
    $('#container').imagesLoaded()
