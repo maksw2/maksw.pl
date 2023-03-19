@@ -187,10 +187,10 @@
 
     /*--------------------------------
     	07. One Page Nav
-    -----------------------------------*/
-    var top_offset = $('.main-menu').height() - 38;
-    $('.main-menu nav ul#nav').onePageNav({
-        currentClass: 'active',
-        scrollOffset: top_offset
-    });
-    
+    -----------------------------------*/   
+  var top_offset = $('.main-menu').height() - 38;
+  $('.main-menu nav ul#nav').onePageNav({
+    currentClass: 'active',
+    scrollOffset: top_offset
+  });
+});
