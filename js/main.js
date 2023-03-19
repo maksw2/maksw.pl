@@ -193,18 +193,3 @@
         currentClass: 'active',
         scrollOffset: top_offset
     });
-    
-    
-    /*---------------------
-    chosen
-    --------------------- */
-    jQuery('.orderby').chosen({disable_search: true, width: "auto"});
-    
-    
-    
-    
-    
-    
-    
-
-})(jQuery);
