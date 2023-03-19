@@ -193,3 +193,4 @@
         currentClass: 'active',
         scrollOffset: top_offset
     });
+    
