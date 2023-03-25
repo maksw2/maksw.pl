@@ -1,1 +1,1 @@
-# bestmcgames.pl
+SECOND STABLE RELEASE WOOOOOOO!
