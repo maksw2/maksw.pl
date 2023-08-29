@@ -1,1 +1,1 @@
-SECOND STABLE RELEASE WOOOOOOO!
+moving from bestmcgames.pl to maksw.pl
