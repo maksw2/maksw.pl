@@ -4,77 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Webpage Title</title>
-    <style>
-        /* Your CSS styles go here */
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        .box {
-            background-color: black;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        p {
-            font-size: 17px;
-            text-align: center;
-        }
-        .box a {
-            display: inline-block;
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 3px;
-        }
-        .modal {
-            align-items: center;
-            display: none;
-            justify-content: center;
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(254, 126, 126, 0.7);
-            transition: all 0.4s;
-        }
-        .content {
-            background: white;
-            width: 400px;
-            padding: 1em 2em;
-            border-radius: 4px;
-            text-align: center;
-        }
-        input[type="checkbox"] {
-            display: none;
-        }
-        input[type="checkbox"]:checked + .modal {
-            display: flex;
-        }
-        .box-close {
-            position: absolute;
-            top: 0;
-            right: 15px;
-            color: #fe0606;
-            text-decoration: none;
-            font-size: 30px;
-        }
-    </style>
 </head>
 <body>
-    <input type="checkbox" id="popup-toggle">
-    
-    <div class="modal">
-        <label for="popup-toggle" class="content">
-            <h1 style="color: green;">Hello GeeksForGeeks !</h1>
-            <p>Never Give Up !</p>
-            <a href="#" class="box-close">×</a>
-        </label>
-    </div>
+    <p>Some content on your webpage.</p>
 
-    <div class="box">
-        <a href="#popup-toggle">Click to Open Popup Box!</a>
-    </div>
+    <script>
+        // JavaScript to display a confirmation dialog when leaving the page
+        window.onbeforeunload = function () {
+            return "Are you sure you want to leave this page? You may lose unsaved data.";
+        };
+    </script>
 </body>
 </html>
