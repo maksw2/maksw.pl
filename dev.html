@@ -1,27 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Logging Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage Title</title>
+    <style>
+        /* Your CSS styles go here */
+        .box {
+            background-color: black;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        p {
+            font-size: 17px;
+        }
+        .box a {
+            display: inline-block;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 3px;
+        }
+        .modal {
+            align-items: center;
+            display: none;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(254, 126, 126, 0.7);
+            transition: all 0.4s;
+        }
+        .content {
+            position: relative;
+            background: white;
+            width: 400px;
+            padding: 1em 2em;
+            border-radius: 4px;
+        }
+        input[type="checkbox"] {
+            display: none;
+        }
+        input[type="checkbox"]:checked + .modal {
+            display: flex;
+        }
+        .box-close {
+            position: absolute;
+            top: 0;
+            right: 15px;
+            color: #fe0606;
+            text-decoration: none;
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
-  <noscript id="logContainer"></noscript>
+    <input type="checkbox" id="popup-toggle">
+    
+    <div class="modal">
+        <label for="popup-toggle" class="content">
+            <h1 style="color: green;">Hello GeeksForGeeks !</h1>
+            <p>Never Give Up !</p>
+            <a href="#" class="box-close">×</a>
+        </label>
+    </div>
 
-  <script>
-    // Function to log a message to the console and to the <noscript> element
-    function log(message) {
-      // Log to the console
-      console.log(message);
-
-      // Log to the <noscript> element
-      var logContainer = document.getElementById('logContainer');
-      if (logContainer) {
-        logContainer.innerHTML += message + '<br>';
-      }
-    }
-
-    // Usage
-    log('This is a log message.');
-    log('Another log message.');
-  </script>
+    <div class="box">
+        <a href="#popup-toggle">Click to Open Popup Box!</a>
+    </div>
 </body>
 </html>
