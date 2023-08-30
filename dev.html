@@ -6,13 +6,13 @@
     <title>Your Webpage Title</title>
 </head>
 <body>
-    <p>Some content on your webpage.</p>
+    <!-- The rest of your website content goes here -->
 
     <script>
-        // JavaScript to display a confirmation dialog when leaving the page
-        window.onbeforeunload = function () {
-            return "Are you sure you want to leave this page? You may lose unsaved data.";
-        };
+        // JavaScript to display a popup message when the page loads
+        window.addEventListener('load', function() {
+            alert("Welcome to our website!");
+        });
     </script>
 </body>
 </html>
