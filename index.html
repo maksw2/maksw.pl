@@ -4,8 +4,7 @@
     <script>
       if (location.protocol == 'http:') // detect http:
       location.href = location.href.replace(/^http:/, 'https:') // change the protocol FROM http:/ TO https:
-      // reverse (https to http) can be found in /projekty/js/redirect.js
-      // credit: some guy on stackoverflow
+	  // ain't doin' it on server side cuz projekty
      </script>
      <meta charset="utf-8">
      <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -13,6 +12,7 @@
      <meta name="description" content="hej">
      <meta name="viewport" content="width=device-width, initial-scale=1">
 	 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	 <link rel="icon" type="image/x-icon" href="./images/favicon.webp">
 	 <!-- slider css !-->
 	 <style>
      .slider {
@@ -31,7 +31,6 @@
     </style>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.webp">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/core.css">
     <link rel="stylesheet" href="css/meanmenu.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -67,9 +66,8 @@
                <div class="dental-owl-slider">
                   <div class="slider">
                    <div class="single-slide" style="background-image: none;"></div>
-				    <noscript><img src="images/slider.png" alt="slider" /></noscript>
+				    <noscript><h1>GO TO nojs.maksw.pl</h1></noscript>
 				    <script>
-	                 console.log('randomizing images')
                      document.addEventListener("DOMContentLoaded", function() {
                      var imageArray = ["./images/slider1.webp", "./images/slider2.webp", "./images/slider3.webp", "./images/slider4.webp"];
                      var randomImageIndex = Math.floor(Math.random() * imageArray.length);
@@ -77,7 +75,6 @@
                      var slideElement = document.querySelector(".single-slide");
                      slideElement.style.backgroundImage = "url('" + imageSrc + "')";
                      });
-		             console.log('done!')
 					</script>
                      <div class="slider-content-area">
                         <div class="dis-table">
@@ -99,7 +96,7 @@
                </div>
             </section>
             <section id="o-mnie">
-               <div class="emergency-area o-nas">
+               <div class="emergency-area o-mnie">
                   <div class="container">
                      <div class="row">
                         <div class="col-md-6 align-self-center order-md-12 pt-25 pb-25">
@@ -112,8 +109,17 @@
                               <p>(nie)Wykwalifikowany zespół mnie i mojego kolegi </p>
                            </div>
                         </div>
-                        <div class="col-md-6 align-self-end order-md-1">
-                           <img src="images/o-mnie.webp" alt="emergency">
+                        <div class="col-md-6 align-self-end">
+                          <img id="random-image-omnie">
+						  <noscript><h1>GO TO nojs.maksw.pl</h1></noscript>
+                          <script>
+                           const imageNamesOmnie = ["ja1.webp", "ja2.webp", "ja3.webp"];
+						   const randomImageNameOmnie = imageNamesOmnie[Math.floor(Math.random() * imageNamesOmnie.length)];
+						   const imageDirOmnie = "./images/";
+						   const imagePathOmnie = imageDirOmnie + randomImageNameOmnie;
+						   const imageOmnie = document.getElementById("random-image-omnie");
+						   imageOmnie.setAttribute("src", imagePathOmnie);
+                          </script>
                         </div>
                      </div>
                   </div>
@@ -133,19 +139,16 @@
                             </div>
                         </div>
                         <div class="col-md-6 align-self-end">
-						 <img id="random-image">
+						 <img id="random-image-projekty">
+						  <noscript><h1>GO TO nojs.maksw.pl</h1></noscript>
                           <script>
-						   console.log('randomizing images')
-                           const imageNames = ["internet1.webp", "internet2.webp", "internet3.webp", "internet4.webp"];
-                           const randomImageName = imageNames[Math.floor(Math.random() * imageNames.length)];
-                           const imageDir = "./images/";
-                           const imagePath = imageDir + randomImageName;
-                           const image = document.getElementById("random-image");
-                           image.setAttribute("src", imagePath);
-                           image.setAttribute("src", imagePath);
-                           console.log('done!')
+                           const imageNamesProjekty = ["wikor1.webp", "wikor2.webp"];
+						   const randomImageNameProjekty = imageNamesProjekty[Math.floor(Math.random() * imageNamesProjekty.length)];
+						   const imageDirProjekty = "./images/";
+						   const imagePathProjekty = imageDirProjekty + randomImageNameProjekty;
+						   const imageProjekty = document.getElementById("random-image-projekty");
+						   imageProjekty.setAttribute("src", imagePathProjekty);
                           </script>
-						  <noscript><img src="images/internet.png" alt="slider" /></noscript>
                         </div>
                      </div>
                   </div>
@@ -208,18 +211,4 @@
          </div>
       </div>
    </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-  <script src="./js/jquery-3.6.4.js"</script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
-  <script>
-   $('#container').imagesLoaded()
-   .done( function( instance ) {
-   console.log('all images successfully loaded');
-   })
-   .fail( function() {
-   console.error('all images loaded, at least one is broken');
-   })
-  </script><!--
-  <script src="js/plugins.js"></script>	
-  <script src="js/main.js"></script>!-->
 </html>
