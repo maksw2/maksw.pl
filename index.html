@@ -29,11 +29,32 @@
      background-size: cover;
     }
     </style>
+	<!-- smooth scroll css !-->
+	<style>
+	 html {
+     scroll-behavior: smooth;
+     }
+    </style>
+	<!-- smooth scroll javascript !-->
+	<script>
+	 document.addEventListener("DOMContentLoaded", function() {
+      var links = document.querySelectorAll('a[href^="#"]');
+  
+      links.forEach(function(link) {
+       link.addEventListener("click", function(event) {
+        event.preventDefault();
+        var targetId = this.getAttribute("href").substring(1);
+        var targetElement = document.getElementById(targetId);
+      
+        if (targetElement) {
+         targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+     });
+    });
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.webp">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/meanmenu.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/core.css">
    </head>
    <body>
       <div class="wrapper bg-white fix">
