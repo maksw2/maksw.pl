@@ -1,1 +1,0 @@
-non-javascript version of maksw.pl

@@ -35,24 +35,6 @@
      scroll-behavior: smooth;
      }
     </style>
-	<!-- smooth scroll javascript !-->
-	<script>
-	 document.addEventListener("DOMContentLoaded", function() {
-      var links = document.querySelectorAll('a[href^="#"]');
-  
-      links.forEach(function(link) {
-       link.addEventListener("click", function(event) {
-        event.preventDefault();
-        var targetId = this.getAttribute("href").substring(1);
-        var targetElement = document.getElementById(targetId);
-      
-        if (targetElement) {
-         targetElement.scrollIntoView({ behavior: "smooth" });
-        }
-      });
-     });
-    });
-    </script>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.webp">
     <link rel="stylesheet" href="css/core.css">
    </head>
@@ -87,7 +69,6 @@
                <div class="dental-owl-slider">
                   <div class="slider">
                    <div class="single-slide" style="background-image: none;"></div>
-				    <noscript><h1>GO TO nojs.maksw.pl</h1></noscript>
 				    <script>
                      document.addEventListener("DOMContentLoaded", function() {
                      var imageArray = ["./images/slider1.webp", "./images/slider2.webp", "./images/slider3.webp", "./images/slider4.webp"];
@@ -132,7 +113,6 @@
                         </div>
                         <div class="col-md-6 align-self-end">
                           <img id="random-image-omnie">
-						  <noscript><h1>GO TO nojs.maksw.pl</h1></noscript>
                           <script>
                            const imageNamesOmnie = ["ja1.webp", "ja2.webp", "ja3.webp"];
 						   const randomImageNameOmnie = imageNamesOmnie[Math.floor(Math.random() * imageNamesOmnie.length)];
@@ -161,7 +141,6 @@
                         </div>
                         <div class="col-md-6 align-self-end">
 						 <img id="random-image-projekty">
-						  <noscript><h1>GO TO nojs.maksw.pl</h1></noscript>
                           <script>
                            const imageNamesProjekty = ["wikor1.webp", "wikor2.webp"];
 						   const randomImageNameProjekty = imageNamesProjekty[Math.floor(Math.random() * imageNamesProjekty.length)];
