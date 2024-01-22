@@ -1,0 +1,255 @@
+<!doctype html>
+<html class="no-js" lang="pl">
+   <head>
+    <script>
+      if (location.protocol == 'http:') // detect http:
+      location.href = location.href.replace(/^http:/, 'https:') // change the protocol FROM http:/ TO https:
+	  // ain't doin' it on server side cuz projekty
+	  console.warn('idiot detected')
+     </script>
+     <meta charset="utf-8">
+     <meta http-equiv="x-ua-compatible" content="ie=edge">
+     <title>maksw.pl</title>
+     <meta name="description" content="hej">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	 <link rel="icon" type="image/x-icon" href="./images/favicon.webp">
+	 <!-- slider css !-->
+	 <style>
+     .slider {
+     height: 30vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     }
+     .single-slide {
+     width: 100%;
+     height: 100%;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+    }
+    </style>
+	<!-- smooth scroll css !-->
+	<style>
+	 html {
+     scroll-behavior: smooth;
+     }
+    </style>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.webp">
+    <link rel="stylesheet" href="css/core.css">
+   </head>
+   <body>
+      <div class="wrapper bg-white fix">
+         <div class="bg-white">
+            <header class="header-area">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-2 col-md-2 col-xs-12">
+                        <div class="logo">
+                           <a href="./"><img src="images/logo.webp" alt="logo" /></a>
+                        </div>
+                     </div>
+                     <div class="col-lg-10 col-md-10 col-xs-12">
+                        <div class="main-menu mean-menu text-right">
+                           <nav>
+                              <ul id="nav">
+                                 <li class="active"><a href="#slider-container">Dom</a></li>
+                                 <li><a href="#o-mnie">O mnie</a></li>
+								 <li><a href="#o-koledze">O koledze</a></li>
+                                 <li><a href="#projekty">Projekty</a></li>
+                                 <li><a href="#kontakt">Kontakt</a></li>
+                              </ul>
+                           </nav>
+                        </div>
+                        <div class="mobile-menu"></div>
+                     </div>
+                  </div>
+               </div>
+            </header>
+            <section id="slider-container">
+               <div class="dental-owl-slider">
+                  <div class="slider">
+                   <div class="single-slide" style="background-image: none;"></div>
+				    <script>
+                     document.addEventListener("DOMContentLoaded", function() {
+                     var imageArray = ["./images/slider1.webp", "./images/slider2.webp", "./images/slider3.webp", "./images/slider4.webp"];
+                     var randomImageIndex = Math.floor(Math.random() * imageArray.length);
+                     var imageSrc = imageArray[randomImageIndex];
+                     var slideElement = document.querySelector(".single-slide");
+                     slideElement.style.backgroundImage = "url('" + imageSrc + "')";
+                     });
+					</script>
+                     <div class="slider-content-area">
+                        <div class="dis-table">
+                           <div class="dis-table-cell text-left">
+                              <div class="container">
+                                 <div class="row">
+                                    <div class="col-md-7">
+                                       <div class="slide-content">
+                                          <h1>moja wizytówka maksw.pl</h1>
+                                          <p>blat kuchenny</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="o-mnie">
+               <div class="emergency-area o-mnie">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-6 align-self-center order-md-12 pt-25 pb-25">
+                           <div class="section-title">
+                              <h2>O mnie</h2>
+                              <p>ja i ty, ja i ty 🎶</p>
+                           </div>
+                           <div class="emergency-content">
+                              <p>lubie grać i programować</p>
+                              <p>(nie)Wykwalifikowany zespół mnie i mojego kolegi </p>
+							  <p>✔ zniszczyłem hydrant na pierwszym piętrze przed godziną wychowawczą</p>
+							  <p>✔ mam 6 z informatyki</p>
+							  <p>✔ zrobiłem dziurę w ścianie na drugim piętrze</p>
+							  <p>✔ zajebałem pisaki z sali 204</p>
+							  <p>✔ ktoś zgubił linijkę a ja wcale nie wiem dlaczego 😅</p>
+							  <p>✔ śpiewam z wiktorem piosenki sinatry (łiktor sinatra & maksiu crosby)</p>
+							  <p>✔ lubie samochody i gokarty</p>
+							  <p>✔ blat kuchenny</p>
+                           </div>
+                        </div>
+                        <div class="col-md-6 align-self-end">
+                          <img id="random-image-omnie">
+                          <script>
+                           const imageNamesOmnie = ["ja1.webp", "ja2.webp", "ja3.webp"];
+						   const randomImageNameOmnie = imageNamesOmnie[Math.floor(Math.random() * imageNamesOmnie.length)];
+						   const imageDirOmnie = "./images/";
+						   const imagePathOmnie = imageDirOmnie + randomImageNameOmnie;
+						   const imageOmnie = document.getElementById("random-image-omnie");
+						   imageOmnie.setAttribute("src", imagePathOmnie);
+                          </script></img>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="o-koledze">
+               <div class="emergency-area gray-bg">
+                  <div class="container">
+                     <div class="row">
+                         <div class="col-md-6 align-self-center pt-25 pb-25">
+                            <div class="section-title">
+                              <h2>O koledze</h2>
+                              <p>cool gość śpiewam z nim sinatre</p>
+                            </div>
+                            <div class="emergency-content">
+                              <p>nie chodzi do szkoły i tyle o nim wiem (chodzi tylko na ostatnią lekcję)</p>
+							  <p>✔ <s>niedojebanie</s> mózgowe</p>
+							  <p>✔ emeryt</p>
+							  <p>✔ WIKOR WRACAJ DO SZKOŁY</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 align-self-end">
+						 <img id="random-image-projekty">
+                          <script>
+                           const imageNamesProjekty = ["wikor1.webp", "wikor2.webp", "wikor3.webp"];
+						   const randomImageNameProjekty = imageNamesProjekty[Math.floor(Math.random() * imageNamesProjekty.length)];
+						   const imageDirProjekty = "./images/";
+						   const imagePathProjekty = imageDirProjekty + randomImageNameProjekty;
+						   const imageProjekty = document.getElementById("random-image-projekty");
+						   imageProjekty.setAttribute("src", imagePathProjekty);
+                          </script></img>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+			<section id="projekty">
+               <div class="emergency-area o-mnie">
+                  <div class="container">
+                     <div class="row">
+                         <div class="col-md-6 align-self-center order-md-12 pt-25 pb-25">
+                            <div class="section-title">
+                              <h2>Projekty</h2>
+                              <p>jakieś projekty</p>
+                            </div>
+                            <div class="emergency-content">
+                              <p>nie moje ale dobre <a href="./projekty">tutaj</a>.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 align-self-end">
+						 <img id="random-image-projekty">
+                          <script>
+                           const imageNamesOkoledze = ["projekty1.webp", "projekty2.webp", "projekty3.webp", "projekty4.webp"];
+						   const randomImageNameOkoledze = imageNamesOkoledze[Math.floor(Math.random() * imageNamesOkoledze.length)];
+						   const imageDirOkoledze = "./images/";
+						   const imagePathOkoledze = imageDirOkoledze + randomImageNameOkoledze;
+						   const imageOkoledze = document.getElementById("random-image-okoledze");
+						   imageOkoledze.setAttribute("src", imagePathOkoledze);
+                          </script></img>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="kontakt">
+               <footer class="footer-area pt-50">
+                  <div class="main-footer">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-4 col-sm-4 col-xs-12">
+                              <div class="footer-widget">
+                                 <div class="footer-logo">
+                                    <img src="images/footer-logo.webp" alt="logo">
+                                 </div>
+                                 <p>nie mam firmy.</p>
+                              </div>
+                           </div>
+                           <div class="col-md-4 hidden-sm hidden-xs">
+                              <div class="footer-widget about-content">
+                                 <h3>kontakt</h3>
+                                 <ul>
+                                    <li>tam ---> 
+                              </div>
+                           </div>
+                           <div class="col-md-4 col-sm-4 col-xs-12">
+                              <div class="footer-widget">
+                                 <h3>Kontakt</h3>
+                                 <div class="single-twit mb-15">
+                                    <div class="widget-icon">
+                                       <i class="zmdi zmdi-pin"></i>
+                                    </div>
+                                    <div class="widget-info">
+                                       <p><a target="_blank" href="https://www.google.com/maps/place/Bydgoszcz/">bydgoszcz</a></p>
+                                    </div>
+                                 </div>
+                                 <div class="single-twit mb-15">
+                                    <div class="widget-icon">
+                                       <i class="zmdi zmdi-email"></i>
+                                    </div>
+                                    <div class="widget-info">
+                                       <p><a href = "mailto: maksw@maksw.pl">maksw@maksw.pl</a></p>
+                                    </div>
+                                 </div>
+                                 <div class="single-twit">
+                                    <div class="widget-icon">
+                                       <i class="zmdi zmdi-phone"></i>
+                                    </div>
+                                    <div class="widget-info">
+                                       <p>nope</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </footer>
+            </section>
+         </div>
+      </div>
+   </body>
+</html>
