@@ -96,7 +96,7 @@
                         <div class="col-md-6 align-self-end">
                           <img id="random-image-omnie">
                           <script>
-                           const imageNamesOmnie = ["ja1.webp", "ja2.webp", "ja3.webp", "ja4.webp", "ja5.webp", "ja6.webp", "ja7.webp", "ja8.webp", "ja9.webp", "ja10.webp"];
+                           const imageNamesOmnie = ["ja1.webp", "ja2.webp", "ja3.webp", "ja4.webp", "ja5.webp", "ja6.webp", "ja7.webp", "ja8.webp"];
 						   const randomImageNameOmnie = imageNamesOmnie[Math.floor(Math.random() * imageNamesOmnie.length)];
 						   const imageDirOmnie = "./images/";
 						   const imagePathOmnie = imageDirOmnie + randomImageNameOmnie;
@@ -155,7 +155,7 @@
                         <div class="col-md-6 align-self-end">
 						 <img id="random-image-projekty">
                           <script>
-                           const imageNamesProjekty = ["projekty1.webp", "projekty2.webp", "projekty3.webp", "projekty4.webp", "projekty5.webp", "projekty6.webp", "projekty7.webp", "projekty8.webp", "projekty9.webp", "projekty10.webp"];
+                           const imageNamesProjekty = ["projekty1.webp", "projekty2.webp", "projekty3.webp", "projekty4.webp", "projekty5.webp", "projekty6.webp", "projekty7.webp", "projekty8.webp", "projekty9.webp"];
 						   const randomImageNameProjekty = imageNamesProjekty[Math.floor(Math.random() * imageNamesProjekty.length)];
 						   const imageDirProjekty = "./images/";
 						   const imagePathProjekty = imageDirProjekty + randomImageNameProjekty;
@@ -175,7 +175,15 @@
                            <div class="col-md-4 col-sm-4 col-xs-12">
                               <div class="footer-widget">
                                  <div class="footer-logo">
-                                    <img src="images/footer-logo.webp" alt="logo">
+                                    <img id="random-image-footer">
+									  <script>
+									   const imageNamesFooter = ["footer-logo1.webp", "footer-logo2.webp"];
+									   const randomImageNameFooter = imageNamesFooter[Math.floor(Math.random() * imageNamesFooter.length)];
+									   const imageDirFooter = "./images/";
+									   const imagePathFooter = imageDirFooter + randomImageNameFooter;
+									   const imageFooter = document.getElementById("random-image-footer");
+									   imageFooter.setAttribute("src", imagePathFooter);
+									  </script></img>
                                  </div>
                               </div>
                            </div>
