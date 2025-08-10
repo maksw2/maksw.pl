@@ -47,7 +47,7 @@
 				    <script>
 					 console.warn("idzie zgarbiona baba do lekarza a lekarz po huj się tak pani skrada");
                      document.addEventListener("DOMContentLoaded", function() {
-                     var imageArray = ["./images/slider1.webp", "./images/slider2.webp", "./images/slider3.webp", "./images/slider4.webp", "./images/slider5.webp", "./images/slider6.webp"];
+                     var imageArray = ["./images/slider1.webp", "./images/slider2.webp", "./images/slider3.webp"];
                      var randomImageIndex = Math.floor(Math.random() * imageArray.length);
                      var imageSrc = imageArray[randomImageIndex];
                      var slideElement = document.querySelector(".single-slide");
@@ -62,7 +62,27 @@
                                     <div class="col-md-7">
                                        <div class="slide-content">
                                           <h1>moja wizytówka maksw.pl</h1>
-                                          <p>blat kuchenny</p>
+
+                                          <div id="lec-quote" style="font-style: italic; margin: 15px; color: white; font-size: 18px; font-weight: bold;">Loading quote...</div>
+                                          <script>
+                                          async function loadQuotes() {
+                                             try {
+                                                const response = await fetch('cytaty.txt');
+                                                if (!response.ok) throw new Error('Failed to load quotes');
+                                                
+                                                const text = await response.text();
+                                                const quotes = text.split('\n').filter(line => line.trim() !== '');
+
+                                                const randomIndex = Math.floor(Math.random() * quotes.length);
+                                                document.getElementById('lec-quote').textContent = quotes[randomIndex];
+                                             } catch (error) {
+                                                document.getElementById('lec-quote').textContent = 'Oops, could not load quotes.';
+                                                console.error(error);
+                                             }
+                                          }
+
+                                          loadQuotes();
+                                          </script>
                                        </div>
                                     </div>
                                  </div>
