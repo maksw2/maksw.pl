@@ -1,122 +1,140 @@
 <!doctype html>
 <html lang="pl">
 <head>
-  <meta name="description" content="pootis">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>maksw projekty</title>
   <meta charset="utf-8">
-  <link rel="preload" href="Orbitron-Black.woff2" as="font" type="font/woff2" crossorigin>
+  <title>wilczurski 10.12.2025 bloki semantyczne</title>
+  <link rel="icon" href="favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- przepraszam, upadłem i poprosiłem gemini żeby dało mi jakieś sensowne style -->
   <style>
-    @font-face {
-      font-family: 'Orbitron';
-      src: url('Orbitron-Black.woff2') format('woff2');
-      font-weight: 900;
-      font-style: normal;
-      font-display: swap;
+    html {
+      scroll-behavior: smooth;
     }
-
-    html, body {
+    /* Reset i podstawowy wygląd */
+    body {
+      font-family: sans-serif; /* Bardziej czytelna czcionka */
       margin: 0;
       padding: 0;
-      height: 100%;
-      width: 100%;
-      font-family: 'Orbitron', sans-serif;
-      font-weight: 900;
-      color: #444;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
+      background-color: #f4f4f4; /* Bardzo jasne szare tło */
+      color: #333; /* Ciemny, czytelny tekst */
+      line-height: 1.6;
     }
 
-    .split {
-      display: flex;
-      flex: 1;
+    /* Kontener dla treści */
+    header, nav, section, footer {
+      max-width: 900px; /* Ograniczenie szerokości dla lepszej czytelności */
+      margin: 0 auto;
+      padding: 1em;
     }
 
-    .pane {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    /* Nagłówek */
+    header {
+      background-color: #333; /* Ciemne tło dla nagłówka */
+      color: white;
       text-align: center;
-      padding: 2%;
+      padding: 2em 1em;
+      margin-bottom: 1em;
     }
 
-    /* Header text scaling nicely */
-    p {
-      font-size: clamp(2rem, 6vw, 4rem); /* min 2rem, preferred 6vw, max 4rem */
-      line-height: 1.2em;
-      animation-name: blinking-text;
-      animation-duration: 4s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      word-break: break-word;
-      margin: 0 0 1em 0;
-    }
-
-    a {
-      font-size: clamp(1rem, 2vw, 1.5rem); /* scale links nicely */
-      display: inline-block;
-      margin: 0.5em 0;
-      text-decoration: none;
-      color: #444;
-    }
-
-    @keyframes blinking-text {
-      0% { color: #ff0; }
-      25% { color: #f00; }
-      50% { color: #000; }
-      75% { color: #f00; }
-      100% { color: #ff0; }
-    }
-
-    .go-back {
+    /* Nawigacja */
+    nav {
+      background-color: #ddd; /* Jasnoszare tło dla nawigacji */
+      padding: 0.5em 1em;
       text-align: center;
-      padding: 1vh 0;
-    }
-
-    .go-back a {
-      font-size: clamp(1rem, 1.5vw, 1.2rem); /* small but readable */
-      text-decoration: none;
-      color: #444;
-      border: 1.5px solid #444;
-      padding: 0.3em 0.8em;
       border-radius: 5px;
-      transition: background 0.3s, color 0.3s;
+      margin-bottom: 1.5em;
     }
 
-    .go-back a:hover {
-      background: #444;
-      color: #fff;
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 10px;
+      padding: 5px 10px;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ccc;
+      border-radius: 3px;
+    }
+
+    /* Sekcje */
+    section {
+      background-color: white;
+      margin-bottom: 2em;
+      padding: 1.5em;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Delikatny cień, aby odróżnić bloki */
+    }
+
+    section h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5em;
+      margin-top: 0;
+    }
+
+    /* Obrazy */
+    section img {
+      max-width: 100%; /* Upewnienie się, że obrazy nie wyjdą poza sekcję */
+      height: auto;
+      display: block;
+      margin: 1em 0;
+      border-radius: 3px;
+    }
+
+    /* Stopka */
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 0.8em;
+      padding: 2em 1em;
     }
   </style>
 </head>
-
 <body>
-  <div class="split">
-    <div class="pane">
-      <div>
-        <p>Moje cudeńka.</p>
-        <br />
-        <a href="bink.png">Bink pod UEFI</a><br />
-		<a href="her-majesty-c-compiler">Her Majesty's C Compiler</a><br />
-		<a href="https://wetoman.pl">wetoman.pl</a><br />
-		<a href="https://spycrab.tf">spycrab.tf</a><br />
-		<a href="https://weedsoldier.tf">weedsoldier.tf</a><br />
-      </div>
-    </div>
-
-    <div class="pane">
-      <div>
-        <p>Projekty które znalazłem w internetach.</p>
-        <br />
-        <a href="./eagler">eaglercraftx</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="go-back">
-    <a href="../">W tył zwrot!</a>
-  </div>
+  <header><h1>projekty wilczurskiego</h1></header>
+  <nav><a href="#bink">bink pod uefi</a> <a href="#hmcc">hmcc</a> <a href="#maksw">maksw.pl</a> <a href="#wetoman">wetoman.pl</a> <a href="#spycrab">spycrab.tf</a> <a href="#weedsoldier">weedsoldier.tf</a></nav>
+  <main>
+  <section id="bink">
+    <h2>A co gdyby uruchomić bibliotekę pod Windowsa.. bez Windowsa?</h2>
+    <img src="https://maksw.pl/projekty/bink.png" alt="Bink Video działające w środowisku UEFI">
+    <h6>Bink Video działające w środowisku UEFI</h6>
+  </section>
+  <section id="hmcc">
+    <h2>A co gdyby zamienić słowa kluczowe w C na absurdalnie brytyjskie..</h2>
+    <p>..i przy okazji usunąć średniki?</p>
+    <img src="https://maksw.pl/projekty/her-majesty-c-compiler/snow.png" alt="Przykładowy program napisany w HMCC">
+    <a href="https://maksw.pl/projekty/her-majesty-c-compiler"><h6>Hej Majesty's C Compiler</h6></a>
+  </section>
+  <section id="maksw">
+    <h2>Moja wspaniała wizytówka</h2>
+    <p>Nie jest zbyt na serio, ale co w tym złego?</p>
+    <img src="https://maksw.pl/images/projekty3.webp" alt="Ja i Wiktor">
+    <a href="https://maksw.pl"><h6>Moja strona maksw.pl</h6></a>
+  </section>
+  <section id="wetoman">
+    <h2>Ah ta propaganda KO!</h2>
+    <p>Ale co gdybym zrobił stronę z podobnym adresem (ich wetomat mój wetoman) gdzie przedstawiam obiektywne informacje?</p>
+    <img src="wetoman.png" alt="Zrzut ekranu ze strony">
+    <a href="https://wetoman.pl"><h6>Moja strona satyryczna wetoman.pl</h6></a>
+  </section>
+  <section id="spycrab">
+    <h2>Pewnie śmiesznie by było kupić domenę tylko dla żartu..</h2>
+    <p>..więc tak zrobiłem!</p>
+    <img src="spycrab.png" alt="Zrzut ekranu ze strony">
+    <a href="https://spycrab.tf"><h6>Moja żartobliwa strona spycrab.tf</h6></a>
+  </section>
+  <section id="weedsoldier">
+    <h2>Miłość do gry..</h2>
+    <p>..w stylu r/tf2shitposterclub</p>
+    <img src="weedsoldier.png" alt="Zrzut ekranu ze strony">
+    <a href="https://weedsoldier.tf"><h6>Moja głupawa strona weedsoldier.tf</h6></a>
+  </section>
+  </main>
+  <footer>
+    <p>mmmm stopy. strona pod wtfpl v2 jak coś.</p>
+    <a href="#" id="backToTop" class="button">⬆ Na górę</a>
+  </footer>
 </body>
 </html>
