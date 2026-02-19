@@ -95,12 +95,72 @@
 </head>
 <body>
   <header><h1>projekty wilczurskiego</h1></header>
-  <nav><a href="#dllfrankenstein">narzędzie dllfrankenstein</a> <a href="#bink">bink pod uefi</a> <a href="#weedsoldier">weedsoldier.tf</a></nav>
+  <nav>
+    <a href="#madpcm">madpcm</a>
+    <a href="#dllfrankenstein">narzędzie dllfrankenstein</a>
+    <a href="#bink">bink pod uefi</a>
+    <a href="#weedsoldier">weedsoldier.tf</a></nav>
   <main>
 
+  <section id="madpcm">
+    <h2>MADPCM — audio kodek, który nie bierze jeńców</h2>
+    <p>Matematyka FLAC-a, ale z ograniczeniami ADPCM. Mały (500 linii C), szybki i bezkompromisowy. Działa na tosterach, lodówkach i 486.</p>
+    
+    <div style="overflow-x: auto;">
+    <table style="width: 100%; border-collapse: collapse; margin: 1.5em 0; font-size: 0.85em; text-align: center; border: 1px solid #ddd;">
+      <thead>
+        <tr style="background-color: #333; color: white;">
+          <th style="padding: 12px; text-align: left;">Parametr (Średnio)</th>
+          <th style="padding: 12px;">IMA ADPCM (ffmpeg)</th>
+          <th style="padding: 12px; background-color: #444;">MADPCM (slow)</th>
+          <th style="padding: 12px;">Zysk / Różnica</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 10px; text-align: left;"><strong>PSNR</strong> (Peak Signal-to-Noise)</td>
+          <td style="padding: 10px;">~55.5 dB</td>
+          <td style="padding: 10px; background-color: #f0fdf4;"><strong>~60.8 dB</strong></td>
+          <td style="padding: 10px; color: #166534;">+5.3 dB lepsza wierność</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 10px; text-align: left;"><strong>SNR</strong> (Signal-to-Noise)</td>
+          <td style="padding: 10px;">~33.1 dB</td>
+          <td style="padding: 10px; background-color: #f0fdf4;"><strong>~38.3 dB</strong></td>
+          <td style="padding: 10px; color: #166534;">Czystość sygnału</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 10px; text-align: left;"><strong>RMSE</strong> (Błąd średniokwadratowy)</td>
+          <td style="padding: 10px;">54.96</td>
+          <td style="padding: 10px; background-color: #f0fdf4;"><strong>30.36</strong></td>
+          <td style="padding: 10px; color: #166534;">~45% mniej błędów</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 10px; text-align: left;"><strong>MAE</strong> (Średni błąd bezwzględny)</td>
+          <td style="padding: 10px;">5042</td>
+          <td style="padding: 10px; background-color: #f0fdf4;"><strong>502</strong></td>
+          <td style="padding: 10px; color: #166534;">Drastyczna redukcja odchyleń</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; text-align: left;"><strong>Czas dekodowania</strong> (suppe.wav)</td>
+          <td style="padding: 10px;">0.348s</td>
+          <td style="padding: 10px; background-color: #f0fdf4;"><strong>0.038s</strong></td>
+          <td style="padding: 10px; color: #166534;">~9x szybciej</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><small><i>*Testy wykonane na procesorze Ryzen 5 3600XT przy próbkowaniu 48kHz Stereo.</i></small></p>
+
+  <figure>
+    <figcaption><a href="https://github.com/maksw2/madpcm">Repozytorium MADPCM — Zobacz pełną specyfikację techniczną</a></figcaption>
+  </figure>
+  </section>
+
   <section id="dllfrankenstein">
-    <h2>Potrzebujesz grzebać w plikach DLL bez pisania C?</h2>
-	<p>dllfrankenstein ci w tym pomoże!</p>
+    <h2>dllfrankenstein — kompetentny kuzyn rundll32</h2>
+	  <p>Surowy most między człowiekiem a maszyną. Pozwala ręcznie ładować biblioteki DLL, manipulować pamięcią i wywoływać funkcje natywne z poziomu terminala lub skryptów.</p>
     <figure>
       <img src="dllfrankenstein.png" alt="readme dllfrankenstein">
       <figcaption><a href="https://github.com/maksw2/dllfrankenstein">Repozytorium dllfrankenstein</a></figcaption>
