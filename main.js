@@ -47,9 +47,23 @@ document.addEventListener("DOMContentLoaded", () => {
   loadQuote("cytaty.txt", "lec-quote");
 
   /* 3. Losowe zdjęcia sekcji */
-  setImg("img-omnie",    ["ja1.webp","ja2.webp","ja3.webp","ja4.webp","ja5.webp","ja6.webp","ja7.webp"]);
-  setImg("img-okoledze", ["wikor1.webp","wikor2.webp","wikor3.webp","wikor4.webp","wikor5.webp","wikor6.webp","wikor7.webp","wikor8.webp","wikor9.webp"]);
-  setImg("img-projekty", ["projekty1.webp","projekty2.webp","projekty3.webp","projekty4.webp","projekty5.webp","projekty6.webp"]);
+  setImg("img-omnie", [
+    "ja1.webp", "ja2.webp", "ja3.webp", "ja4.webp", "ja5.webp", 
+    "ja6.webp", "ja7.webp", "ja8.webp", "ja9.webp", "ja10.webp", 
+    "ja11.webp", "ja12.webp", "ja13.webp", "ja14.webp"
+  ]);
+
+  setImg("img-okoledze", [
+    "wikor1.webp", "wikor2.webp", "wikor3.webp", "wikor4.webp", 
+    "wikor5.webp", "wikor6.webp", "wikor7.webp"
+  ]);
+
+  setImg("img-projekty", [
+    "projekty1.webp", "projekty2.webp", "projekty3.webp", "projekty4.webp", 
+    "projekty5.webp", "projekty6.webp", "projekty7.webp", "projekty8.webp", 
+    "projekty9.webp", "projekty10.webp", "projekty11.webp", "projekty12.webp", 
+    "projekty13.webp"
+  ]);
 
   /* 4. Scroll-to-top */
   const scrollBtn = document.getElementById("scroll-top");
